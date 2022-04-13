@@ -1,38 +1,21 @@
-@mixin heading-shadow($colour:lightness-shift($colour-primary), $offset: $heading-shadow-size){
-    text-shadow: $offset $offset $colour;
+@mixin imgtaille{
+    background-size: cover;
+    background-position: auto;
+    width: 400px;
+    height: 320px;
+    border-radius: 10% 10% 0 0;
 }
-
-@mixin border($colour:$colour-primary) {
-    border: .1rem solid $colour;
+@mixin cubeLegend{
+    brackround-color: white;
+    background-position: bottom;
+    width: 380px;
+    height: 60px;
+    border-radius: 0 0 10% 10%;
 }
-
-@mixin img-ratio {
-    width: 100%;
-        display: block;
-        overflow: hidden;
-        padding-top: 56.25%;
-        position: relative;
-        & img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100%;
-            transform: translate(-50%, -50%);
-        }
-}
-
-@mixin btn {
-    padding: $grid-gutter;
-    @include border;
-    color: $colour-primary;
-    background: $colour-secondary;
-    cursor: pointer;
-    &:hover{
-        background: $colour-primary;
-        color: $colour-accent;
-    }
-    &--full-width {
-        width: 100%;
-        margin: 0 auto;
-    }
+@mixin btn{
+    
+    margin: 10px auto;
+    background-color: $colour-secondary;
+    font-size: 18px;
+    padding: 5px;
 }

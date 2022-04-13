@@ -1,6 +1,42 @@
-.container {
-    margin: $layout-margin;
-    padding: $grid-gutter $grid-gutter 0 $grid-gutter;
-    @include border($colour-accent);
+.restaurant{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $colour-ground;
+    width: 400px;
+    height: 400px;
+    padding-left: 10px;  
+    padding-right: 10px;   
 }
-
+.description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    @include cubeLegend;
+}
+.coeur{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 50px;
+    right: 50px;
+}
+.imgRestaurant1{
+    background-image: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    @include imgtaille;
+}
+.imgRestaurant2{
+    background-image: url("../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    @include imgtaille;
+}
+.imgRestaurant3{
+    background-image: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+    @include imgtaille;
+}
+.imgRestaurant4{
+    background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    @include imgtaille;
+}
