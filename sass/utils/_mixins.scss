@@ -1,9 +1,9 @@
 @mixin imgtaille{
     background-size: cover;
     background-position: auto;
-    width: 400px;
+    width: auto;
     height: 320px;
-    border-radius: 10% 10% 0 0;
+    border-radius: 25px 25px 0 0;
 }
 @mixin cubeLegend{
     brackround-color: white;

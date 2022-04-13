@@ -45,9 +45,11 @@ p{
 
 }
 
-a{
+main a{
     color: black;
     text-decoration: none;
+    background-color: white;
+    border-radius: 25px;
 }
 button {
     font-family: 'Roboto', sans-serif;
