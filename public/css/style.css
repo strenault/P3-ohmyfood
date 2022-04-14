@@ -26,42 +26,29 @@ p {
 
 .font-marg {
   display: flex;
-  justify-content: center;
   text-align: center;
-  width: 215px;
-  height: 70px;
-  margin: 40px auto;
+  height: 60px;
+  margin: 30px auto;
+  margin-top: 50px;
 }
 
 .font-marg1 {
   display: flex;
-  justify-content: center;
   text-align: center;
-  width: 240px;
-  height: 70px;
-  margin: 10px auto;
+  height: 60px;
+  margin: 30px auto;
 }
 
-.nav_btn {
-  margin: 10px auto;
-  background-color: #FF79DA;
-  font-size: 18px;
-  padding: 5px;
-  height: 50px;
-}
-
-main a {
+a {
   color: black;
   text-decoration: none;
-  background-color: white;
-  border-radius: 25px;
 }
 
-button {
+.recherche {
   font-family: "Roboto", sans-serif;
 }
 
-.btnHeader {
+.header__btn {
   margin: 10px auto;
   background-color: #FF79DA;
   font-size: 18px;
@@ -69,25 +56,19 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 25px;
-  height: 50px;
+  border-radius: 30px;
+  height: 40px;
   width: 250px;
 }
 
-.header {
-  display: flex;
-  align-items: center;
+header {
   background: white;
-  height: 1000px;
   width: 100%;
 }
-
-header img {
+header .logo {
   font-family: "Shrikhland", sans-serif;
   height: 50px;
-  width: auto;
   display: flex;
-  align-items: center;
   justify-content: center;
   margin: 20px auto;
 }
@@ -100,126 +81,147 @@ imput {
 #icone_marker_map {
   display: flex;
   width: 40px;
-  height: 40px;
+  margin-right: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#rechercher {
-  width: 150px;
-  height: 60px;
-  background-color: rgb(231, 217, 217);
-  border: none;
-  font-weight: bold;
-  font-size: 18px;
 }
 
 .recherche {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 60px;
   background-color: rgb(231, 217, 217);
+  justify-content: center;
 }
-
-.reserve-explore {
+.recherche__explore {
   display: flex;
   flex-direction: column;
   width: auto;
   height: 400px;
   background-color: #f6f6f6;
 }
-
-nav {
-  display: flex;
-}
-
-.nav-titre {
-  display: flex;
-}
-
-.conteneur {
-  height: 20px;
-  width: 250px;
-  border-radius: 40px;
-}
-
-li h3 {
-  margin-left: 20px;
-}
-
-ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  counter-reset: compteliste;
-}
-
-li {
-  padding: 1.5rem;
-  margin: 16px 0 16px 12px;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.125);
-  border-radius: 20px;
-  background-color: #f6f6f6;
-  display: flex;
-  position: relative;
-  align-items: center;
-}
-
-li:before {
-  counter-increment: compteListe 1;
-  content: counter(compteListe) " ";
-  background: #9356dc;
-  height: 24px;
-  width: 24px;
-  border-radius: 100px;
+.recherche__btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+}
+
+.bloc-filtre {
+  display: flex;
+  flex-direction: column;
+}
+
+.filtre {
+  display: flex;
+  height: auto;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+.filtre__titre {
+  margin-left: 20px;
+}
+.filtre__resto {
+  margin: 10px auto;
+  background-color: #FF79DA;
+  font-size: 18px;
+  padding: 5px;
+  background-color: #f6f6f6;
+  height: 30px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+.filtre__resto--blocNum {
+  background-color: #9356DC;
+  height: 25px;
+  width: 25px;
+  border-radius: 25PX;
+  position: relative;
+  left: -20px;
+}
+.filtre__resto--num {
   position: absolute;
-  left: -12px;
+  left: 8px;
+  top: -12px;
+}
+.filtre__resto--text {
+  margin: 0 auto;
+}
+
+.restaurant-titre {
+  margin-left: 20px;
+}
+
+.box-restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 900px;
+  background-color: #f6f6f6;
+}
+
+.box-restaurant a {
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.bloc1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bloc2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .restaurant {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #f6f6f6;
   width: 400px;
   height: 400px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
-
-.description {
+.restaurant__description {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-left: 15px;
   margin-right: 15px;
   brackround-color: white;
-  background-position: bottom;
-  width: 380px;
+  width: auto;
   height: 60px;
   border-radius: 0 0 10% 10%;
 }
 
 .coeur {
   display: flex;
-  justify-content: left;
+}
+.coeur-icone {
   align-items: center;
-  height: 50px;
-  right: 50px;
+  justify-content: left;
+  position: absolute;
+}
+.coeur-effet {
+  align-items: center;
+  justify-content: left;
+  position: relative;
+  color: red;
+  transform: opacity translate3d(45px 45px -45px);
+  opacity: 0;
+}
+.coeur-effet:hover {
+  transition: transform 2s;
+  transform-origin: bottom;
+  opacity: 1;
 }
 
 .imgRestaurant1 {
   background-image: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-size: cover;
-  background-position: auto;
   width: auto;
   height: 320px;
   border-radius: 25px 25px 0 0;
@@ -228,7 +230,6 @@ li:before {
 .imgRestaurant2 {
   background-image: url("../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
   background-size: cover;
-  background-position: auto;
   width: auto;
   height: 320px;
   border-radius: 25px 25px 0 0;
@@ -237,7 +238,6 @@ li:before {
 .imgRestaurant3 {
   background-image: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
   background-size: cover;
-  background-position: auto;
   width: auto;
   height: 320px;
   border-radius: 25px 25px 0 0;
@@ -246,7 +246,6 @@ li:before {
 .imgRestaurant4 {
   background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   background-size: cover;
-  background-position: auto;
   width: auto;
   height: 320px;
   border-radius: 25px 25px 0 0;
@@ -257,6 +256,13 @@ footer {
   flex-direction: column;
   padding-left: 30px;
   background-color: black;
+}
+
+.logo-smool {
+  margin-left: 10px;
+  margin-top: 10px;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
 }
 
 footer img {
@@ -283,26 +289,6 @@ footer a {
   align-items: center;
   width: 30px;
   height: 30px;
-}
-
-main {
-  height: 1800px;
-  width: 599px;
-  margin: 0 auto;
-  background-color: #f6f6f6;
-}
-main .bloc1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  align-items: center;
-}
-main .bloc2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

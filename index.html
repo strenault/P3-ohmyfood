@@ -11,91 +11,116 @@
     <body>
         <!--header//header//header-->
         <header>
-            <div>
+            <div class="logo">
                 <img  src="./images/logo/ohmyfood@2x.svg" alt="ohmyfood" />
             </div>
-            <div class="recherche">
-                <i class="fas fa-map-marker-alt fa-2x icon-recherche" id="icone_marker_map"></i>
-                <input type="search" value="Paris, Belleville" name="recherche" id="rechercher" />
+        </header>
+        <section class="recherche">
+            <div class="recherche__btn">
+                <i class="fas fa-map-marker-alt icon-recherche" id="icone_marker_map"></i>
+                <h2 class="recherche__text">Paris, Belleville</h2>
             </div>
-            <div class="reserve-explore">
+            <div class="recherche__explore">
                 <h2 class="font-marg"><strong>Réservez le menu qui vous convient</strong></h2>
                 <p class="font-marg1">Découvrez des restaurants d'exception,sélectionnés par nos soins</p><br>
-                <button class="btnHeader">
+                <a class="header__btn" href="#"> 
                     <span>Explorer nos restaurants</span>
-                </button>
+                </a>
             </div>
-        </header>
-        <nav>
-            <div class="nav-titre">
-                <h2>Fonctionnement</h2>
+        </section>
+        <!--foncitonnement//fonctionnement//fonctionnement-->
+        <section class="bloc-filtre">            
+                <h2 class="filtre__titre">Fonctionnement</h2>
+            <div class="filtre">
+            <a href="#" class="filtre__resto">
+                <div class="filtre__resto--blocNum">
+                    <p class="filtre__resto--num">1</p>
+                </div>
+                <i class="fas fa-mobile-alt"></i>
+                <p class="filtre__resto--text"> Choisissez votre restaurant</p>
+            </a>
+            <a href="#" class="filtre__resto">
+                <div class="filtre__resto--blocNum">
+                    <p class="filtre__resto--num">2</p>
+                </div>
+                <i class="fas fa-list-ul"></i>
+                <p class="filtre__resto--text"> Composez votre menu</p>
+            </a>
+            <a href="#" class="filtre__resto">
+                <div class="filtre__resto--blocNum">
+                    <p class="filtre__resto--num">3</p>
+                </div>
+                <i class="fas fa-store"></i>
+                <p class="filtre__resto--text"> Dégustez au restaurant</p>
+            </a>
             </div>
-            <ol>
-                <li class="conteneur">                
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Choisissez un restaurant</h3>
-                </li>
-                <li class="conteneur">               
-                    <i class="far fa-list"></i> 
-                    <h3>Composez votre menu</h3>           
-                </li>
-                <li class="conteneur">
-                    <i class="fas fa-store"></i>
-                    <h3>Déguste au restaurant</h3>
-                </li>
-            </ol>
-        </nav>
+        </section>
+        <!--main//restaurant//main//restaurant//main//restaurant-->
         <main>
-            <h2>Restaurants</h2>
-            <div>
+            <div class="box-restaurant">
+            <h2 class="restaurant-titre">Restaurants</h2>
+            <div class="bloc1">
                 <div class="restaurant"><a href="page2.html">
                     <div class="imgRestaurant1"></div>
-                    <div class="description">
+                    <div class="restaurant__description">
                         <div>
                         <h3><strong>la palette du goût</strong></h3>
                         <p>Ménilmontant</p>
-                        </div>
-                        <div class="coeur"><i class="fa-regular fa-heart fa-2x"></i></div>
+                    </div>
+                        <span class="coeur">
+                            <div class="coeur-icone"><i class="fa-regular fa-heart fa-2x"></i></div>
+                            <div class="coeur-effet"><i class="fa-solid fa-heart fa-2x"></i></div>
+                        </span>
                     </div>
                 </a></div>
                 <div class="restaurant"><a href="page3.html">
                     <div class="imgRestaurant2"></div>
-                    <div class="description">
+                    <div class="restaurant__description">
                         <div>
                             <h3><strong>Note enchantée</strong></h3>
                             <p>Charonne</p>
                         </div> 
-                        <div class="coeur"><i class="fa-regular fa-heart fa-2x"></i></div>
+                        <span class="coeur">
+                            <div class="coeur-icone"><i class="fa-regular fa-heart fa-2x"></i></div>
+                            <div class="coeur-effet"><i class="fa-solid fa-heart fa-2x"></i></div>
+                        </span>
                     </div>
                 </a></div>
             </div>
-            <div>
-                <div class="restaurant"><a href="page4.html"></a>
+            <div class="bloc2">
+                <div class="restaurant"><a href="page4.html">
                     <div class="imgRestaurant3"></div>
-                    <div class="description">
+                    <div class="restaurant__description">
                         <div>
                         <h3><strong>À la française</strong></h3>
                         <p>Cité Rouge</p>
                         </div>
-                        <div class="coeur"><i class="fa-regular fa-heart fa-2x"></i></div>
+                        <span class="coeur">
+                            <div class="coeur-icone"><i class="fa-regular fa-heart fa-2x"></i></div>
+                            <div class="coeur-effet"><i class="fa-solid fa-heart fa-2x"></i></div>
+                        </span>
                     </div>
                 </a></div>
                 <div class="restaurant"><a href="page5.html">
                     <div class="imgRestaurant4"></div>
-                    <div class="description">
+                    <div class="restaurant__description">
                         <div>
                             <h3><strong>Le délice des sens</strong></h3>
                             <p>Folie-Méricourt</p>
                         </div>
-                        <div class="coeur"><i class="fa-regular fa-heart fa-2x"></i></div>
+                        <span class="coeur">
+                        <div class="coeur-icone"><i class="fa-regular fa-heart fa-2x"></i></div>
+                        <div class="coeur-effet"><i class="fa-solid fa-heart fa-2x"></i></div>
+                        </span>
                     </div>
                 </a></div>
+            </div>
             </div>
         </main>
         <footer>
             <div>
                 <div class="logo-smool">
-                    <img  src="./images/logo/ohmyfood@2x.svg" alt="ohmyfood" />
+                    <img  src="./images/logo/ohmyfood.png" alt="ohmyfood" />
                 </div>
                 <div>
                     <div class="footer-box"><a href="#"></a>

@@ -23,34 +23,18 @@ p{
 }
 
 .font-marg{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 215px;
-    height: 70px;
+    @include marge;
+    margin-top: 50px;
 
-    margin: 40px auto;
 }
 .font-marg1{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 240px;
-    height: 70px;
-    margin: 10px auto;
+    @include marge;
 }
-.nav_btn{
-    @include btn;
-    height: 50px
-
-}
-
-main a{
+a{
     color: black;
     text-decoration: none;
-    background-color: white;
-    border-radius: 25px;
 }
-button {
+
+.recherche{
     font-family: 'Roboto', sans-serif;
 }
