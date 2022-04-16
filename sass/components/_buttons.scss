@@ -5,6 +5,15 @@
     align-items: center;
     border-radius: 30px;
     height: 40px;
+    width: 250px;    
+}
+.menu--button__btn{
+    @include btn;
+    display: flex; 
+    align-items: center;
+    justify-content: center;  
+    position: absolute;   
+    border-radius: 30px;
+    height: 60px;
     width: 250px;
-    
 }

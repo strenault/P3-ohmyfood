@@ -1,8 +1,13 @@
 footer{
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     padding-left: 30px;
     background-color: black;
+}
+.footer__cub{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
 }
 .logo-smool{
     margin-left: 10px;

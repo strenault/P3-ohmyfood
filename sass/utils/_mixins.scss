@@ -10,15 +10,49 @@
     height: 60px;
     border-radius: 0 0 10% 10%;
 }
+@mixin boiteMenu{
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 450px;
+    height: 70px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px black;
+}
 @mixin btn{    
     margin: 10px auto;
     background-color: $colour-secondary;
+    text-align: center;
     font-size: 18px;
     padding: 5px;
+    box-shadow: 2px 2px 4px gray;
+    &:hover{
+        box-shadow: 6px 6px 8px gray;
+        filter: brightness(140%);
+    }
 }
 @mixin marge {
     display: flex;
     text-align: center;
     height: 60px;
     margin: 30px auto;
+}
+@keyframes coeur-effect {
+    0%{
+        margin-bottom: -30px;
+        opacity: 0;
+    }
+    30%{
+        margin-bottom: -23px;
+        opacity: .3;
+    }
+    70%{
+        margin-bottom: -3px;
+        opacity: .6;
+    }
+    100%{
+        margin-bottom: -10px;
+        opacity: 1;
+    }
+    
 }

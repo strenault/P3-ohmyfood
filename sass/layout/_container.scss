@@ -13,6 +13,17 @@
     text-decoration: none;
     background-color: white;
     border-radius: 25px;
+    position: relative;
+    display: block;
+}
+.cart-badge {
+    background-color: $colour-tertiaire;
+    color: #1b6150;
+    padding: .5rem;
+    border-radius: .125rem;
+    position: absolute;
+    top: 16px;
+    right: 12px;
 }
 .bloc1{
     display: flex;
@@ -42,27 +53,28 @@
 }
 
 .coeur{
-    display: flex;
+    display: inline-block;
    
-    &-icone{      
+    &--icone{  
+        display: inline-block;    
         align-items: center;
         justify-content: left;
         position: absolute;
-        
     }
-    &-effet{
+    &--effet{
+        opacity: 0;
+        color: mix($colour-secondary, $colour-primary);
         align-items: center;
         justify-content: left;
-        position: relative;        
-        color: red;
-        transform: opacity translate3d(45px 45px -45px);
-        opacity: 0;
-        &:hover{
-            transition: transform 2s ;
-            transform-origin: bottom;
-            opacity: 1;
+        position: relative;
+        transition-property: 5s;    
+        
+        &:hover{            
+                opacity: 1;
+                transition: 2s;
+                content: "";      
+           
         }
-
     }
 }
 
@@ -81,4 +93,90 @@
 .imgRestaurant4{
     background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
     @include imgtaille;
+}
+.imgRestaurant12{
+    background-image: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    @include imgtaille;
+    height: 420px;
+    margin-bottom: -30px;    
+}
+.imgRestaurant22{
+    background-image: url("../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    @include imgtaille;
+    height: 420px;
+    margin-bottom: -30px;
+}
+.imgRestaurant32{
+    background-image: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+    @include imgtaille;
+    height: 420px;
+    margin-bottom: -30px;
+}
+.imgRestaurant42{
+    background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    @include imgtaille;
+    height: 420px;
+    margin-bottom: -30px;
+}
+.menu{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    background-color: $colour-ground;
+    border-radius: 30px 30px 0 0;
+    &--titre{
+        margin-left: 20px;
+        font-size: 30px;
+    }
+    &--logo{
+        display: flex;
+        margin-right: 20px;
+        margin-top: -px;
+        align-items: center;
+
+    }
+    &--button{
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;              
+        margin: 30px;
+        width: 100%;
+        height: 30px;
+        &__commander{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+.repas{
+    display: flex;
+    flex-direction: column;
+    background-color: $colour-ground;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.menuBox{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;    
+    margin: 10px auto;    
+    @include boiteMenu;
+}
+.menu-img{
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+.menuButtons{
+    width: 100%;
+    margin: 30px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+   
+    
 }
