@@ -5,19 +5,16 @@
     border-radius: 25px 25px 0 0;
 }
 @mixin cubeLegend{
-    brackround-color: white;
     width: auto;
     height: 60px;
     border-radius: 0 0 10% 10%;
 }
 @mixin boiteMenu{
     font-size: 12px;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 450px;
+    width: 550px;
     height: 70px;
     border-radius: 15px;
-    box-shadow: 2px 2px 2px 2px black;
+    box-shadow: 2px 2px 2px 2px gray;
 }
 @mixin btn{    
     margin: 10px auto;

@@ -7,7 +7,7 @@
     height: 40px;
     width: 250px;    
 }
-.menu--button__btn{
+.menu-button--btn{
     @include btn;
     display: flex; 
     align-items: center;
@@ -17,3 +17,4 @@
     height: 60px;
     width: 250px;
 }
+
