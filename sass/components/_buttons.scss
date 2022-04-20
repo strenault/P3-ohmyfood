@@ -17,4 +17,13 @@
     height: 60px;
     width: 250px;
 }
-
+.menu-box--button {
+	overflow: hidden;
+	text-align: center;
+	background: $colour-tertiaire;
+	width: 0;
+	align-items: center;
+	transition: width 1s;
+	padding-top: 25px;
+  
+}

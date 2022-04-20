@@ -63,13 +63,11 @@
 	animation-fill-mode: forwards;
 	opacity:0;
 }
-
 .up--4 {
 	animation-delay: 450ms;
 	animation-fill-mode: forwards;
 	opacity:0;
 }
-
 @keyframes fadein {
     from {
 		transform: translateY(40px);
@@ -80,7 +78,6 @@
         opacity:1;
     }
 }
-
 .menu-info {
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -89,15 +86,10 @@
 	margin: 20px 0 0 10px;
 }
 
-.title-sup {
-	font-weight: normal;
-}
-
 .cout {
 	padding: 38px 20px 15px 15px;
 	font-weight: bold;
 }
-
 .menu-info {
 	display: flex;
 	justify-content: space-between;
@@ -109,29 +101,21 @@
 	margin-top: 20px;
 	height: 70px;
 }
-
-.menu-box--button {
-	overflow: hidden;
-	text-align: center;
-	background: $colour-tertiaire;
-	width: 0;
-	align-items: center;
-	transition: width 1s;
-	padding-top: 25px;
-  
-}
-
 .check {
 	display: inline-block;
   	color: #fff;
 	transform: rotate(360deg);
 	transition: transform 500ms;
 }
-
 .menu-info:hover .menu-box--button {
 	width: 70px;
 }
-
 .menu-info:hover .menu-box--button > .check {
 	transform: rotate(0deg);
+}
+@media (max-width: 650px){
+	.menu-info:hover .menu-box--button {
+		width: 40px;
+	}
+  
 }

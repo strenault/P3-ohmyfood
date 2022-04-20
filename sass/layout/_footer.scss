@@ -1,12 +1,10 @@
 footer{
     display: flex;
     flex-direction: column;
-    max-width: 1300px;
-    margin: 0 auto;
     background-color: black;
 }
 .logo-smool{
-    margin-left: 10px;
+    margin-left: 50px;
     margin-top: 10px;
     filter: invert(100%);
 }
@@ -16,6 +14,7 @@ footer img{
 .footer__cub{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     height: auto;
 }
 footer a{
@@ -38,4 +37,12 @@ footer a{
     height: 30px;
     
 }
-
+@media (max-width: 650px){
+    .footer__cub{
+        margin-left: 50px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: auto;
+    }
+  
+}

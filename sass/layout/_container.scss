@@ -1,3 +1,4 @@
+/*--restaurant--restaurant--restaurant--restaurant*/
 .restaurant-titre{
     margin-left: 20px;
 }
@@ -66,7 +67,6 @@
         @include cubeLegend;
     }
 }
-
 .coeur{
     display: inline-block;
    
@@ -109,33 +109,34 @@
     background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
     @include imgtaille;
 }
+/*--page--menu--page--menu--page--menu*/
 .imgRestaurant12{
     background-image: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     @include imgtaille;
-    height: 480px;
-    margin-bottom: -50px;    
+    height: 550px;
+    margin-bottom: -80px;    
 }
 .imgRestaurant22{
     background-image: url("../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
     @include imgtaille;
-    height: 480px;
-    margin-bottom: -50px;
+    height: 550px;
+    margin-bottom: -80px;
 }
 .imgRestaurant32{
     background-image: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
     @include imgtaille;
-    height: 480px;
-    margin-bottom: -50px;
+    height: 550px;
+    margin-bottom: -80px;
 }
 .imgRestaurant42{
     background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
     @include imgtaille;
-    height: 480px;
-    margin-bottom: -50px;
+    height: 550px;
+    margin-bottom: -80px;
 }
 .main-menu{
     display: flex;
-    max-width: 1300px;
+    max-width: 80%;
     margin: 0 auto;
     flex-direction: column;
     justify-content: space-between;
@@ -204,8 +205,6 @@
         margin-bottom: 20px;
     }
 }
-
-
 .repas-titre{
     display: flex;
     position: relative; 
@@ -220,33 +219,42 @@
         border-bottom: 3px solid $colour-tertiaire;
     }
 }
-
-.menuBox{
-    display: flex;
-    background-color: $colour-ground;
-    justify-content: space-between;
-    align-items: center;    
-    margin: 10px auto;
-    padding-left: 0px;    
-    @include boiteMenu;
-    overflow: hidden;
-}
 .menu-info{
     display: flex;
     background-color: white;
     justify-content: space-between;
+    text-overflow: ellipsis;
     align-items: center;
     padding-left: 10px;    
-    margin: 10px auto;    
+    margin: 10px auto;
+    width: 650px;    
     @include boiteMenu;
     
 }
 .cout-button{
     display: flex;
 }
+.menuBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: $colour-ground;
+}
+.title-sup {
+    white-space: nowrap;
+	text-overflow: ellipsis;
+	font-weight: normal;
+}
+.menu-box--header{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bold;
+}
 .menu-box{
     display: flex;
     flex-direction: column;
+    text-overflow: ellipsis;
+    overflow: hidden;
     &--cout{
         height: 70px;
         width: 70px;
@@ -285,8 +293,44 @@
     transition: transform 500ms;
     transition: transform 500ms, -webkit-transform 500ms;
 }
-.menu-img {
-    display: flex;
-    align-items: center;
-    width: auto;
+/*--media--media--media--breakpoint--breakpoint--*/
+@media (max-width:1300px){
+    .menu-info{
+        width: 500px;
+    }
+}
+@media (max-width:1000px){
+    .menu-info{
+        width: 400px;
+    }
+    .menus{
+        padding-left: 0px;
+    }
+    .menu-button--btn{
+        height: 50px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 650px){
+    .menu-info{
+        height: 50px;
+        width: 350px;
+    }
+    .menu-box--cout{
+        height: 50px;
+        width: 40px;
+    }
+    .menu-box--button{
+        height: 50px;
+        
+    }
+    .check{
+        margin-top: 6px;
+        font-size: 10px;
+    }
+    .menu-button--btn{
+        width: 150px;
+    }
+  
 }
