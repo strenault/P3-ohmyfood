@@ -30,10 +30,13 @@ p{
 }
 .font-marg{
     @include marge;
+    font-size: 25px;
+    font-weight: bold;
     margin-top: 50px;
 
 }
 .font-marg1{
+    font-size: 20px;
     @include marge;
 }
 a{
