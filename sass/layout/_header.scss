@@ -26,8 +26,9 @@ imput{
     justify-content: center;
 }
 .recherche{
+    max-width: 1300px;
+    margin: 0 auto;
     background-color: rgb(231, 217, 217);
-    justify-content: center;
     &__explore{
         display: flex;
         flex-direction: column;    
@@ -45,7 +46,8 @@ imput{
 .bloc-filtre{
     display: flex;
     flex-direction: column;
-
+    max-width: 1300px;
+    margin: 0 auto;
 }
 .filtre{
     display: flex;
