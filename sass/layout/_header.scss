@@ -85,9 +85,11 @@ imput{
     }
    
 }
+.color-icon-filtre{
+    color: #f5edff;
+}
 .backround3{
     background-color: $colour-secondary;  
-    filter: brightness(170%);  
 }   
 
 @media (max-width:1300px){
