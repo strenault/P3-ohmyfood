@@ -136,7 +136,7 @@
 }
 .main-menu{
     display: flex;
-    max-width: 80%;
+    max-width: 70%;
     margin: 0 auto;
     flex-direction: column;
     justify-content: space-between;
@@ -147,12 +147,13 @@
 
 .menu{
     width: 100%;
-    justify-content: space-between;
+    margin: 0 auto;
+    justify-content: space-around;
     display: flex;
     background-color: $colour-ground;
     border-radius: 30px 30px 0 0;
     &--titre{
-        margin-left: 20px;
+        margin-left: 30px;
         font-size: 30px;
     }
     &--logo{
@@ -186,7 +187,6 @@
 .menus{
     display: flex;
     flex-direction: column;
-    padding-left: 70px;
     margin: 0 auto;
     align-items: center;
     &--repas{ 
@@ -208,6 +208,7 @@
 .repas-titre{
     display: flex;
     position: relative; 
+    font-size: 20px;
     height: 30px;
     margin-bottom: 10px;
     &::after{
@@ -223,6 +224,7 @@
     display: flex;
     background-color: white;
     justify-content: space-between;
+    overflow: hidden;
     text-overflow: ellipsis;
     align-items: center;
     padding-left: 10px;    
@@ -241,11 +243,17 @@
     background-color: $colour-ground;
 }
 .title-sup {
+    margin-top: 3px;
     white-space: nowrap;
+    overflow: hidden;
 	text-overflow: ellipsis;
 	font-weight: normal;
 }
+.title-header{
+    margin-bottom: 3px;
+}
 .menu-box--header{
+    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     font-weight: bold;
@@ -298,8 +306,9 @@
     .menu-info{
         width: 500px;
     }
+    
 }
-@media (max-width:1000px){
+@media (max-width:1125px){
     .menu-info{
         width: 400px;
     }
@@ -312,7 +321,16 @@
     }
 }
 
-@media (max-width: 650px){
+@media (max-width: 900px){
+    .menu--titre{
+        font-size: 22px;
+    }
+    .repas-titre{
+        font-size: 16px;
+        &::after{
+            width: 40px;
+        }
+    }
     .menu-info{
         height: 50px;
         width: 350px;
@@ -331,6 +349,98 @@
     }
     .menu-button--btn{
         width: 150px;
+    }  
+}
+@media (max-width: 700px){
+   .menu-coeur{
+       margin-right: 0px;
+   }
+   .menu--titre{
+       margin-left: 0px;
+   }
+}
+@media (max-width: 600px){
+    .menu-info{
+        width: 300px;
     }
-  
+    .imgRestaurant12,
+    .imgRestaurant22,
+    .imgRestaurant32,
+    .imgRestaurant42{
+        height: 400px;
+    }
+}
+@media (max-width: 500px){
+    .menu-info{
+        width: 250px;
+    }
+    .repas-titre{
+        font-size: 14px;
+        &::after{
+            top: 20px;
+        }
+    }
+}
+@media (max-width: 450px){
+    .menu--titre{
+        font-size: 18px;
+    }
+    .title-header{
+        font-size: 12px;
+    }
+    .title-sup{
+        font-size: 12px;
+    }
+    .cout-button p{
+        font-size: 12px;
+    }
+    .repas-titre{
+        font-size: 12px;
+        margin-bottom: 0px;
+        &::after{
+            width: 25px;
+            top: 20px;
+        }
+    }
+    .menu-info{
+        width: 230px;
+    }
+    .main-menu{
+        max-width: 80%;
+    }
+    .menu-button--btn{
+        font-size: 14px;
+    }
+    .imgRestaurant12,
+    .imgRestaurant22,
+    .imgRestaurant32,
+    .imgRestaurant42{
+        margin-bottom: -50px;
+    }
+}
+@media (max-width: 345px){
+    .menu--titre{
+        font-size: 14px;
+    }
+    .repas-titre{
+        font-size: 10px;
+        &::after{
+            width: 25px;
+            top: 15px;
+        }
+    }
+    
+    .menu-info{
+        width: 180px;
+    }
+    .check{
+        margin-top: 5px;
+    }
+    .imgRestaurant12,
+    .imgRestaurant22,
+    .imgRestaurant32,
+    .imgRestaurant42{
+        height: 300px;
+        margin-bottom: -30px;
+    }
 }

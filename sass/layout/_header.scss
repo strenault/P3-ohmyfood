@@ -1,4 +1,6 @@
 header {
+    max-width: 1300px;
+    margin: 0 auto;
     background: white;
     width: 100%; 
     .logo{
@@ -24,9 +26,8 @@ imput{
     justify-content: center;
 }
 .recherche{
-    max-width: 1300px;
-    margin: 0 auto;
-    background-color: gainsboro;
+    background-color: rgb(231, 217, 217);
+    justify-content: center;
     &__explore{
         display: flex;
         flex-direction: column;    
@@ -44,8 +45,7 @@ imput{
 .bloc-filtre{
     display: flex;
     flex-direction: column;
-    max-width: 1300px;
-    margin: 0 auto;
+
 }
 .filtre{
     display: flex;
@@ -84,4 +84,42 @@ imput{
         }
     }
    
+}
+.backround3{
+    background-color: $colour-secondary;  
+    filter: brightness(170%);  
+}   
+
+@media (max-width:1300px){
+    .retour{
+        left: -350px;
+    }
+}
+@media (max-width:1100px){
+    .retour{
+        left: -250px;
+    }
+}
+@media (max-width:890px){
+    .retour{
+        left: -150px;
+    }
+} 
+@media (max-width:680px){
+    header .logo{
+        height: 40px;
+    }
+    .retour{
+        left: -50px;
+    }
+} 
+@media (max-width:470px){
+    .retour{
+        left: 10px;
+    }
+}
+@media (max-width:340px){
+    .retour{
+        left: 10px;
+    }
 }

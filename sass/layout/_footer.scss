@@ -43,6 +43,23 @@ footer a{
         flex-wrap: nowrap;
         flex-direction: column;
         height: auto;
+    }   
+}
+@media (max-width: 600px){
+    .footer-box{
+        margin: 0px;
     }
-  
+}
+@media (max-width: 350px){
+    .logo-smool{
+        margin-left: 20px;
+    }
+    .footer__cub{
+        margin-left: 20px;
+    }
+    .menu-button--btn{
+        width: 100px;
+        height: 45px;
+    }
+    
 }
