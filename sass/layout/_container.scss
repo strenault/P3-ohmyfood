@@ -36,7 +36,7 @@
         border-radius: .125rem;
         position: absolute;
         top: 100px;
-        right: 60px;
+        right: 200px;
     }
 }
 .bloc1{
@@ -233,9 +233,7 @@
     @include boiteMenu;
     
 }
-.cout-button{
-    display: flex;
-}
+
 .menuBox{
     display: flex;
     flex-direction: column;
@@ -258,12 +256,17 @@
     white-space: nowrap;
     font-weight: bold;
 }
+.cout-button{
+    display: flex;
+    justify-content: flex-end;
+}
 .menu-box{
     display: flex;
     flex-direction: column;
     text-overflow: ellipsis;
     overflow: hidden;
     &--cout{
+        justify-content: flex-end;
         height: 70px;
         width: 70px;
         border-radius: 0 15px 15px 0;
@@ -273,13 +276,12 @@
     }
     &--button{ 
         overflow: hidden;
-        position: relative;        
+        position: relative;
+        justify-content: flex-end;        
         border-radius: 0 15px 15px 0;
         height: 70px;
         width: 0px;
         background-color: $colour-tertiaire;
-        -webkit-transition: width 1s;
-        -o-transition: width 1s;
         transition: width 1s;
         padding-top: 25px;
     }
@@ -292,19 +294,22 @@
     margin: 0 auto;
     margin-top: 7px;
     font-size: 15px;
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-    -webkit-transition: -webkit-transform 500ms;
-    transition: -webkit-transform 500ms;
-    -o-transition: transform 500ms;
-    transition: transform 500ms;
-    transition: transform 500ms, -webkit-transform 500ms;
+    transform: rotate(360deg);       
+    transition: transform 1s;
 }
 /*--media--media--media--breakpoint--breakpoint--*/
+@media (max-width:1500px){
+    .cart-badge--menu{
+        right: 100px;
+    }
+    
+}
 @media (max-width:1300px){
     .menu-info{
         width: 500px;
+    }
+    .cart-badge--menu{
+        right: 30px;
     }
     
 }
@@ -385,10 +390,10 @@
     .menu--titre{
         font-size: 18px;
     }
-    .title-header{
+    h3{
         font-size: 12px;
     }
-    .title-sup{
+    p{
         font-size: 12px;
     }
     .cout-button p{

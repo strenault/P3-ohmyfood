@@ -1,4 +1,5 @@
-@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @keyframes coeur-effect {
   0% {
     margin-bottom: -30px;
@@ -19,6 +20,7 @@
 }
 /*--animation-loader*/
 .loader {
+  z-index: 6;
   position: absolute;
   width: 100%;
   height: 50px;
@@ -29,48 +31,42 @@
   width: 80px;
   height: 80px;
   display: inline-block;
+  z-index: 6;
+  opacity: 1;
   margin: 200px auto;
   border-radius: 60px;
   border-top: 4px solid #9356DC;
   border-right: 4px solid rgba(91, 25, 93, 0.4);
-  border-bottom: 4px solid #9356DC;
+  border-bottom: 4px solid #FF79da;
   border-left: 4px solid rgba(91, 25, 93, 0.4);
   animation-name: spin;
-  -webkit-animation-name: spin;
-  animation-duration: 1400ms;
-  -webkit-animation-duration: 1400ms;
+  animation-duration: 2000ms;
   animation-timing-function: linear;
-  -webkit-animation-timing-function: linear;
   animation-iteration-count: 2;
-  -webkit-animation-iteration-count: 2;
   animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
 }
 
 @keyframes spin {
   0% {
     transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
     overflow: hidden;
   }
   100% {
     transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
     visibility: hidden;
   }
 }
 /*  ANIMATION - Page blanche Loader */
 .loaderStart {
-  -webkit-animation: whitePage 6s;
   animation: whitePage 6s;
 }
 
 @keyframes whitePage {
   0% {
-    opacity: 0;
+    opacity: 0.5;
   }
   50% {
-    opacity: 0;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
@@ -100,7 +96,7 @@ h3 {
 p {
   text-overflow: ellipsis;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .retour {
@@ -153,7 +149,7 @@ a {
   width: 250px;
 }
 .header__btn:hover {
-  box-shadow: 6px 6px 8px gray;
+  background: linear-gradient(356deg, #9356DC 20%, #FF79da 70%);
   filter: brightness(140%);
 }
 
@@ -174,7 +170,7 @@ a {
   width: 250px;
 }
 .menu-button--btn:hover {
-  box-shadow: 6px 6px 8px gray;
+  background: linear-gradient(356deg, #9356DC 20%, #FF79da 70%);
   filter: brightness(140%);
 }
 
@@ -182,7 +178,7 @@ a {
   overflow: hidden;
   text-align: center;
   background: #99E2D0;
-  width: 0;
+  right: 0px;
   align-items: center;
   transition: width 1s;
   padding-top: 25px;
@@ -262,7 +258,7 @@ imput {
   width: 300px;
 }
 .filtre__resto:hover {
-  box-shadow: 6px 6px 8px gray;
+  background: linear-gradient(356deg, #9356DC 20%, #FF79da 70%);
   filter: brightness(140%);
 }
 .filtre__resto--blocNum {
@@ -328,43 +324,14 @@ imput {
   0% {
     margin-left: 100%;
     opacity: 0;
-    width: 100%;
+    right: -70px;
   }
   100% {
-    margin-right: 0%;
+    margin-left: 100%;
     opacity: 1;
-    width: 100%;
+    right: 0px;
   }
 }
-@keyframes itemAppear {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes loader {
-  100% {
-    opacity: 0;
-    z-index: -10;
-  }
-}
-@keyframes jump {
-  0% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(0.5rem);
-  }
-  75% {
-    transform: translateY(-0.5rem);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-/*  ANIMATION - Apparition boutons sélection  */
 .up {
   animation: fadein 1s;
 }
@@ -412,6 +379,7 @@ imput {
 }
 
 .cout {
+  justify-content: flex-end;
   padding: 38px 20px 15px 15px;
   font-weight: bold;
 }
@@ -432,7 +400,7 @@ imput {
   display: inline-block;
   color: #fff;
   transform: rotate(360deg);
-  transition: transform 500ms;
+  transition: transform 1s;
 }
 
 .menu-info:hover .menu-box--button {
@@ -491,7 +459,7 @@ imput {
   border-radius: 0.125rem;
   position: absolute;
   top: 100px;
-  right: 60px;
+  right: 200px;
 }
 
 .bloc1 {
@@ -726,10 +694,6 @@ imput {
   box-shadow: 2px 2px 2px 2px gray;
 }
 
-.cout-button {
-  display: flex;
-}
-
 .menuBox {
   display: flex;
   flex-direction: column;
@@ -756,6 +720,11 @@ imput {
   font-weight: bold;
 }
 
+.cout-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .menu-box {
   display: flex;
   flex-direction: column;
@@ -763,6 +732,7 @@ imput {
   overflow: hidden;
 }
 .menu-box--cout {
+  justify-content: flex-end;
   height: 70px;
   width: 70px;
   border-radius: 0 15px 15px 0;
@@ -773,12 +743,11 @@ imput {
 .menu-box--button {
   overflow: hidden;
   position: relative;
+  justify-content: flex-end;
   border-radius: 0 15px 15px 0;
   height: 70px;
   width: 0px;
   background-color: #99E2D0;
-  -webkit-transition: width 1s;
-  -o-transition: width 1s;
   transition: width 1s;
   padding-top: 25px;
 }
@@ -790,20 +759,23 @@ imput {
   margin: 0 auto;
   margin-top: 7px;
   font-size: 15px;
-  -webkit-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
   transform: rotate(360deg);
-  -webkit-transition: -webkit-transform 500ms;
-  transition: -webkit-transform 500ms;
-  -o-transition: transform 500ms;
-  transition: transform 500ms;
-  transition: transform 500ms, -webkit-transform 500ms;
+  transition: transform 1s;
 }
 
 /*--media--media--media--breakpoint--breakpoint--*/
+@media (max-width: 1500px) {
+  .cart-badge--menu {
+    right: 100px;
+  }
+}
 @media (max-width: 1300px) {
   .menu-info {
     width: 500px;
+  }
+
+  .cart-badge--menu {
+    right: 30px;
   }
 }
 @media (max-width: 1125px) {
@@ -893,11 +865,11 @@ imput {
     font-size: 18px;
   }
 
-  .title-header {
+  h3 {
     font-size: 12px;
   }
 
-  .title-sup {
+  p {
     font-size: 12px;
   }
 

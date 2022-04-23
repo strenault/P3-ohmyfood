@@ -23,7 +23,7 @@
     padding: 5px;
     box-shadow: 2px 2px 4px gray;
     &:hover{
-        box-shadow: 6px 6px 8px gray;
+        background: linear-gradient(356deg,#9356DC 20%,#FF79da 70%);
         filter: brightness(140%);
     }
 }

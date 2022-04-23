@@ -1,12 +1,14 @@
     <!DOCTYPE html>
+    <html lang="fr">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ohmyfood</title>
 	    <link rel="stylesheet" type="text/css" href="./public/css/style.css">
-            <!--icone fontawesome-->
-            <script src="https://kit.fontawesome.com/b91dd1d88d.js" crossorigin="anonymous"></script>
-            <!--icone font awesome-->
+        
+        <!--icone fontawesome-->
+        <script src="https://kit.fontawesome.com/b91dd1d88d.js" crossorigin="anonymous"></script>
+        <!--icone font awesome-->
     </head>
     <body>
         <div class="loader">
@@ -23,7 +25,7 @@
                 <i class="fas fa-map-marker-alt icon-recherche" id="icone_marker_map"></i>
                 <h2 class="recherche__text">Paris, Belleville</h2>
             </div>
-            <div class="recherche__explore">
+            <div class="loaderStart recherche__explore">
                 <h2 class="font-marg"><strong>Réservez le menu qui vous convient</strong></h2>
                 <p class="font-marg1">Découvrez des restaurants d'exception, sélectionnés par nos soins</p><br>
                 <a class="header__btn" href="#"> 
@@ -49,11 +51,11 @@
                 <i class="fas fa-list-ul"></i>
                 <p class="filtre__resto--text"> Composez votre menu</p>
             </a>
-            <a href="#" class="filtre__resto backround3">
+            <a href="#" class="filtre__resto">
                 <div class="filtre__resto--blocNum">
                     <p class="filtre__resto--num">3</p>
                 </div>
-                <i class="fas fa-store color-icon-filtre"></i>
+                <i class="fas fa-store"></i>
                 <p class="filtre__resto--text"> Dégustez au restaurant</p>
             </a>
             </div>
@@ -72,10 +74,10 @@
                         <h3><strong>la palette du goût</strong></h3>
                         <p>Ménilmontant</p>
                     </div>
-                        <span class="coeur">
+                        <div class="coeur">
                             <div><i class="fa-regular fa-heart fa-2x coeur--icone"></i></div>
                             <div><i class="fa-solid fa-heart fa-2x coeur--effet"></i></div>
-                        </span>
+                        </div>
                     </div>
                 </a></div>
                 <div class="restaurant"><a href="la-note-enchantee.html">
@@ -87,10 +89,10 @@
                             <h3><strong>Note enchantée</strong></h3>
                             <p>Charonne</p>
                         </div> 
-                        <span class="coeur">
+                        <div class="coeur">
                             <div><i class="fa-regular fa-heart fa-2x coeur--icone"></i></div>
                             <div><i class="fa-solid fa-heart fa-2x coeur--effet"></i></div>
-                        </span>
+                        </div>
                     </div>
                 </a></div>
             </div>
@@ -102,10 +104,10 @@
                         <h3><strong>À la française</strong></h3>
                         <p>Cité Rouge</p>
                         </div>
-                        <span class="coeur">
+                        <div class="coeur">
                             <div><i class="fa-regular fa-heart fa-2x coeur--icone"></i></div>
-                        <div><i class="fa-solid fa-heart fa-2x coeur--effet"></i></div>
-                        </span>
+                            <div><i class="fa-solid fa-heart fa-2x coeur--effet"></i></div>
+                        </div>
                     </div>
                 </a></div>
                 <div class="restaurant"><a href="le-delice-des-sens.html">
@@ -115,10 +117,10 @@
                             <h3><strong>Le délice des sens</strong></h3>
                             <p>Folie-Méricourt</p>
                         </div>
-                        <span class="coeur">
-                        <div><i class="fa-regular fa-heart fa-2x coeur--icone"></i></div>
-                        <div><i class="fa-solid fa-heart fa-2x coeur--effet"></i></div>
-                        </span>
+                        <div class="coeur">
+                            <div><i class="fa-regular fa-heart fa-2x coeur--icone"></i></div>
+                            <div><i class="fa-solid fa-heart fa-2x coeur--effet"></i></div>
+                        </div>
                     </div>
                 </a></div>
             </div>
@@ -130,7 +132,7 @@
                     <img  src="./images/logo/ohmyfood.png" alt="ohmyfood" />
                 </div>
                 <div class="footer__cub">
-                    <div class="footer-box"><a href="#"></a>
+                    <div class="footer-box"><a href="#">
                         <i class="fa-solid fa-utensils footer-logo"></i>
                         <h3>Proposer un restaurant</h3>
                     </a></div>
@@ -145,6 +147,7 @@
                         <h3>Contact</h3>
                     </a></div>
                 </div>
-            </footer>        
+            </div>
+        </footer>        
     </body>
 </html>
