@@ -51,11 +51,10 @@ imput{
     display: flex;
     height: auto;
     margin-bottom: 30px;
-    flex-wrap: wrap;
-    &__titre{
+    &--titre{
         margin-left: 20px;
     }
-    &__resto{
+    &--resto{
         @include btn;
         background-color: $colour-ground;
         height: 30px;
@@ -64,7 +63,7 @@ imput{
         align-items: center;
         
         width: 300px;
-        &--blocNum{
+        &__blocNum{
             background-color: $colour-primary;
             height: 25px;
             width: 25px;
@@ -72,14 +71,14 @@ imput{
             position: relative;
             left: -20px;
         }
-        &--num{
+        &__num{
             
             position: absolute;
-            left: 8px;
-            top: -12px;
+            left: 9px;
+            top: -10px;
            
         }
-        &--text{
+        &__text{
             margin: 0 auto;
         }
     }
@@ -91,7 +90,7 @@ imput{
 .backround3{
     background-color: $colour-secondary;  
 }   
-
+/*--media--media--media--breakpoints--breakpoints--breakpoints--*/
 @media (max-width:1300px){
     .retour{
         left: -350px;
@@ -101,11 +100,15 @@ imput{
     .retour{
         left: -250px;
     }
+    .filtre{
+        flex-direction: column;
+    }
 }
 @media (max-width:890px){
     .retour{
         left: -150px;
     }
+   
 } 
 @media (max-width:680px){
     header .logo{
@@ -119,9 +122,19 @@ imput{
     .retour{
         left: 10px;
     }
+    .filtre--resto{
+        width: 250px;
+    }
+    .filtre--resto__num{
+       left: 10px;
+       top: -6px;
+    }
 }
 @media (max-width:340px){
     .retour{
         left: 10px;
     }
+    .filtre--resto{
+        width: 180px;
+    }   
 }

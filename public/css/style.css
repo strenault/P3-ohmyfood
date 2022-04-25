@@ -220,12 +220,11 @@ imput {
   display: flex;
   height: auto;
   margin-bottom: 30px;
-  flex-wrap: wrap;
 }
-.filtre__titre {
+.filtre--titre {
   margin-left: 20px;
 }
-.filtre__resto {
+.filtre--resto {
   margin: 10px auto;
   background-color: #FF79DA;
   text-align: center;
@@ -239,11 +238,11 @@ imput {
   align-items: center;
   width: 300px;
 }
-.filtre__resto:hover {
+.filtre--resto:hover {
   background: linear-gradient(356deg, #9356DC 20%, #FF79da 70%);
   filter: brightness(140%);
 }
-.filtre__resto--blocNum {
+.filtre--resto__blocNum {
   background-color: #9356DC;
   height: 25px;
   width: 25px;
@@ -251,12 +250,12 @@ imput {
   position: relative;
   left: -20px;
 }
-.filtre__resto--num {
+.filtre--resto__num {
   position: absolute;
-  left: 8px;
-  top: -12px;
+  left: 9px;
+  top: -10px;
 }
-.filtre__resto--text {
+.filtre--resto__text {
   margin: 0 auto;
 }
 
@@ -268,6 +267,7 @@ imput {
   background-color: #FF79DA;
 }
 
+/*--media--media--media--breakpoints--breakpoints--breakpoints--*/
 @media (max-width: 1300px) {
   .retour {
     left: -350px;
@@ -276,6 +276,10 @@ imput {
 @media (max-width: 1100px) {
   .retour {
     left: -250px;
+  }
+
+  .filtre {
+    flex-direction: column;
   }
 }
 @media (max-width: 890px) {
@@ -296,10 +300,23 @@ imput {
   .retour {
     left: 10px;
   }
+
+  .filtre--resto {
+    width: 250px;
+  }
+
+  .filtre--resto__num {
+    left: 10px;
+    top: -6px;
+  }
 }
 @media (max-width: 340px) {
   .retour {
     left: 10px;
+  }
+
+  .filtre--resto {
+    width: 180px;
   }
 }
 @keyframes coeur-effect {
@@ -847,6 +864,30 @@ imput {
   }
 }
 @media (max-width: 450px) {
+  .restaurant {
+    width: 300px;
+    height: 300px;
+  }
+
+  .imgRestaurant1,
+.imgRestaurant2,
+.imgRestaurant3,
+.imgRestaurant4 {
+    height: 220px;
+  }
+
+  .bloc1 {
+    flex-direction: column;
+    height: auto;
+    flex-wrap: nowrap;
+  }
+
+  .bloc2 {
+    flex-direction: column;
+    height: auto;
+    flex-wrap: nowrap;
+  }
+
   .menu--titre {
     font-size: 18px;
   }
@@ -965,6 +1006,7 @@ footer a {
   height: 30px;
 }
 
+/*--media--media--media--breakpoints--breakpoints--breakpoints--*/
 @media (max-width: 650px) {
   .footer__cub {
     margin-left: 50px;

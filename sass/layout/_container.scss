@@ -385,6 +385,28 @@
     }
 }
 @media (max-width: 450px){
+
+    .restaurant{
+        width: 300px;
+        height: 300px;
+    }
+    .imgRestaurant1,
+    .imgRestaurant2,
+    .imgRestaurant3,
+    .imgRestaurant4{
+        height: 220px;
+    }
+    .bloc1{
+        flex-direction: column;
+        height: auto;
+        flex-wrap: nowrap;
+
+    }
+    .bloc2{
+        flex-direction: column;
+        height: auto;
+        flex-wrap: nowrap;
+    }
     .menu--titre{
         font-size: 18px;
     }
