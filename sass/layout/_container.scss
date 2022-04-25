@@ -82,7 +82,7 @@
         align-items: center;
         justify-content: left;
         position: relative;
-        transition-property: 5s;    
+        transition: 5s;    
         
         &:hover{            
                 opacity: 1;
@@ -159,9 +159,7 @@
     &--logo{
         display: flex;
         margin-right: 20px;
-        margin-top: -px;
         align-items: center;
-
     }
     
 }

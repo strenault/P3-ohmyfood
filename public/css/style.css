@@ -1,24 +1,6 @@
+/*--animation-loader*/
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@keyframes coeur-effect {
-  0% {
-    margin-bottom: -30px;
-    opacity: 0;
-  }
-  30% {
-    margin-bottom: -23px;
-    opacity: 0.3;
-  }
-  70% {
-    margin-bottom: -3px;
-    opacity: 0.6;
-  }
-  100% {
-    margin-bottom: -10px;
-    opacity: 1;
-  }
-}
-/*--animation-loader*/
 .loader {
   z-index: 6;
   position: absolute;
@@ -320,16 +302,22 @@ imput {
     left: 10px;
   }
 }
-@keyframes box-button {
+@keyframes coeur-effect {
   0% {
-    margin-left: 100%;
+    margin-bottom: -30px;
     opacity: 0;
-    right: -70px;
+  }
+  30% {
+    margin-bottom: -23px;
+    opacity: 0.3;
+  }
+  70% {
+    margin-bottom: -3px;
+    opacity: 0.6;
   }
   100% {
-    margin-left: 100%;
+    margin-bottom: -10px;
     opacity: 1;
-    right: 0px;
   }
 }
 .up {
@@ -374,7 +362,6 @@ imput {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  flex-grow: 1;
   margin: 20px 0 0 10px;
 }
 
@@ -509,7 +496,7 @@ imput {
   align-items: center;
   justify-content: left;
   position: relative;
-  transition-property: 5s;
+  transition: 5s;
 }
 .coeur--effet:hover {
   opacity: 1;
@@ -616,7 +603,6 @@ imput {
 .menu--logo {
   display: flex;
   margin-right: 20px;
-  margin-top: -px;
   align-items: center;
 }
 

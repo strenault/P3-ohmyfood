@@ -33,22 +33,3 @@
     height: 60px;
     margin: 30px auto;
 }
-@keyframes coeur-effect {
-    0%{
-        margin-bottom: -30px;
-        opacity: 0;
-    }
-    30%{
-        margin-bottom: -23px;
-        opacity: .3;
-    }
-    70%{
-        margin-bottom: -3px;
-        opacity: .6;
-    }
-    100%{
-        margin-bottom: -10px;
-        opacity: 1;
-    }
-    
-}
