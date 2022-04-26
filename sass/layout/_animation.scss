@@ -1,3 +1,4 @@
+/*--animation--coeur--animation--coeur--*/
 @keyframes coeur-effect {
     0%{
         margin-bottom: -30px;
@@ -8,7 +9,7 @@
         opacity: .3;
     }
     70%{
-        margin-bottom: -3px;
+        margin-bottom: -13px;
         opacity: .6;
     }
     100%{
@@ -17,7 +18,7 @@
     }
     
 }
-
+/*--animation--menu--animation--menu--animation--menu--*/
 .up {
 	animation: fadein 1s;
 }

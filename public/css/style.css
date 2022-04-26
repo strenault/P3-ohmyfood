@@ -13,7 +13,7 @@
   width: 80px;
   height: 80px;
   display: inline-block;
-  z-index: 6;
+  z-index: 16;
   opacity: 1;
   margin: 200px auto;
   border-radius: 60px;
@@ -40,7 +40,7 @@
 }
 /*  ANIMATION - Page blanche Loader */
 .loaderStart {
-  animation: whitePage 6s;
+  animation: whitePage 4s;
 }
 
 @keyframes whitePage {
@@ -133,6 +133,7 @@ a {
 .header__btn:hover {
   background: linear-gradient(356deg, #9356DC 20%, #FF79da 70%);
   filter: brightness(140%);
+  box-shadow: 4px 4px 6px gray;
 }
 
 .menu-button--btn {
@@ -154,6 +155,7 @@ a {
 .menu-button--btn:hover {
   background: linear-gradient(356deg, #9356DC 20%, #FF79da 70%);
   filter: brightness(140%);
+  box-shadow: 4px 4px 6px gray;
 }
 
 .menu-box--button {
@@ -241,6 +243,7 @@ imput {
 .filtre--resto:hover {
   background: linear-gradient(356deg, #9356DC 20%, #FF79da 70%);
   filter: brightness(140%);
+  box-shadow: 4px 4px 6px gray;
 }
 .filtre--resto__blocNum {
   background-color: #9356DC;
@@ -319,6 +322,7 @@ imput {
     width: 180px;
   }
 }
+/*--animation--coeur--animation--coeur--*/
 @keyframes coeur-effect {
   0% {
     margin-bottom: -30px;
@@ -329,7 +333,7 @@ imput {
     opacity: 0.3;
   }
   70% {
-    margin-bottom: -3px;
+    margin-bottom: -13px;
     opacity: 0.6;
   }
   100% {
@@ -337,6 +341,7 @@ imput {
     opacity: 1;
   }
 }
+/*--animation--menu--animation--menu--animation--menu--*/
 .up {
   animation: fadein 1s;
 }

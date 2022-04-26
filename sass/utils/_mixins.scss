@@ -25,6 +25,7 @@
     &:hover{
         background: linear-gradient(356deg,#9356DC 20%,#FF79da 70%);
         filter: brightness(140%);
+        box-shadow: 4px 4px 6px gray;
     }
 }
 @mixin marge {
