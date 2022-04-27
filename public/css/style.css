@@ -468,7 +468,7 @@ imput {
   border-radius: 0.125rem;
   position: absolute;
   top: 100px;
-  right: 200px;
+  right: 350px;
 }
 
 .bloc1 {
@@ -772,6 +772,11 @@ imput {
 }
 
 /*--media--media--media--breakpoint--breakpoint--*/
+@media (max-width: 1600px) {
+  .cart-badge--menu {
+    right: 200px;
+  }
+}
 @media (max-width: 1500px) {
   .cart-badge--menu {
     right: 100px;
