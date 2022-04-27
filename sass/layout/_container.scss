@@ -192,7 +192,6 @@
         margin: 0 auto;
         max-width: 1300px;
         background-color: $colour-ground;
-    
         margin-bottom: 10px;
     }
     &__carte{
@@ -230,13 +229,6 @@
     width: 650px;    
     @include boiteMenu;
     
-}
-
-.menuBox{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: $colour-ground;
 }
 .title-sup {
     margin-top: 3px;

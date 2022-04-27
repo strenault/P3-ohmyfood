@@ -702,13 +702,6 @@ imput {
   box-shadow: 2px 2px 2px 2px gray;
 }
 
-.menuBox {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background-color: #f6f6f6;
-}
-
 .title-sup {
   margin-top: 3px;
   white-space: nowrap;
