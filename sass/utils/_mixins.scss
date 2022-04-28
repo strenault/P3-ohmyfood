@@ -1,5 +1,7 @@
 @mixin imgtaille{
     background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
     width: auto;
     height: 320px;
     border-radius: 25px 25px 0 0;
@@ -30,7 +32,7 @@
 }
 @mixin marge {
     display: flex;
+    margin: auto;
     text-align: center;
-    height: 60px;
-    margin: 30px auto;
+    margin-top: 20px;
 }

@@ -1,5 +1,4 @@
 header {
-    max-width: 1300px;
     margin: 0 auto;
     background: white;
     width: 100%; 
@@ -26,13 +25,12 @@ imput{
     justify-content: center;
 }
 .recherche{
-    background-color: rgb(231, 217, 217);
+    background-color: #eaeaea;
     justify-content: center;
     &__explore{
         display: flex;
         flex-direction: column;    
         width: auto;
-        height: 400px;
         background-color: $colour-ground;
     }
     &__btn{

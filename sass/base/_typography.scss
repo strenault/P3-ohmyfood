@@ -4,10 +4,6 @@ body {
     color: black;
 
 }
-
-h1,h2,h3{
-    font-family: 'Shrikhland',"cursive" ;  
-}
 h1{
     font-size: 20px;
 }
@@ -33,12 +29,11 @@ p{
     @include marge;
     font-size: 25px;
     font-weight: bold;
-    margin-top: 50px;
-
 }
 .font-marg1{
     font-size: 20px;
     @include marge;
+
 }
 a{
     color: black;
