@@ -1,19 +1,15 @@
 /*--animation--coeur--animation--coeur--*/
 @keyframes coeur-effect {
-    0%{
-        margin-bottom: -30px;
+    0%{  
         opacity: 0;
     }
     30%{
-        margin-bottom: -23px;
         opacity: .3;
     }
     70%{
-        margin-bottom: -13px;
         opacity: .6;
     }
     100%{
-        margin-bottom: -10px;
         opacity: 1;
     }
     
@@ -66,19 +62,9 @@
 	font-weight: bold;
 }
 .menu-info {
-	display: flex;
-	justify-content: space-between;
-	overflow: hidden;
 	cursor: pointer;
-	background-color: #fff;
-	border-radius: 15px;
-	box-shadow: 0px 5px 10px 0px rgb(220, 220, 220);
-	margin-top: 20px;
-	height: 70px;
 }
 .check {
-	display: inline-block;
-  	color: #fff;
 	transform: rotate(360deg);
 	transition: transform 1s;
 }
