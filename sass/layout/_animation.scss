@@ -14,6 +14,10 @@
     }
     
 }
+/*--animation--animation--fonctionnement--fonctionnement--*/
+.filtre--resto:hover .filtre-icon{
+	color: $colour-primary;
+}
 /*--animation--menu--animation--menu--animation--menu--*/
 .up {
 	animation: fadein 1s;
@@ -68,12 +72,16 @@
 	transform: rotate(360deg);
 	transition: transform 1s;
 }
+.filtre-icon :hover{
+	color: $colour-primary;
+}
 .menu-info:hover .menu-box--button {
 	width: 70px;
 }
 .menu-info:hover .menu-box--button > .check {
 	transform: rotate(0deg);
 }
+
 /*--media--media--media--breakpoints--breakpoints--*/
 @media (max-width: 650px){
 	.menu-info:hover .menu-box--button {

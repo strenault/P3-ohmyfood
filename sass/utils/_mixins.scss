@@ -19,7 +19,7 @@
 }
 @mixin btn{    
     margin: 10px auto;
-    background-color: $colour-secondary;
+    background: linear-gradient(356deg,#9356DC 20%,#FF79da 70%);
     text-align: center;
     font-size: 18px;
     padding: 5px;
@@ -27,6 +27,17 @@
     &:hover{
         background: linear-gradient(356deg,#9356DC 20%,#FF79da 70%);
         filter: brightness(140%);
+        box-shadow: 4px 4px 6px gray;
+    }
+}
+@mixin btnFiltre{    
+    margin: 10px auto;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    box-shadow: 2px 2px 4px gray;
+    &:hover{
+        background-color: #F5EDFF;
         box-shadow: 4px 4px 6px gray;
     }
 }

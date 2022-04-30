@@ -58,6 +58,11 @@ footer a{
         width: 280px;
     }
 }
+@media (max-width: 360px){    
+    .footer-width{
+    margin: 0 0;
+    }
+}
 @media (max-width: 350px){
     .logo-smool{
         margin-left: 20px;
@@ -74,5 +79,12 @@ footer a{
 @media (max-width: 300px){
     .footer-width{
         width: 200px;
-    }  
+        font-size: 12px;
+    }
+    .logo-smool{
+        margin-left: 10px;
+    }
+    .footer__cub{
+        margin-left: 10px;
+    }    
 }
