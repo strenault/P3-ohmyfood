@@ -1,12 +1,13 @@
 header {
     margin: 0 auto;
     background: white;
+    display: flex;
+    
     width: 100%; 
     .logo{
         font-family: 'Shrikhland', sans-serif;
-        height: 50px;
-        display: flex;
         justify-content: center;
+        height: auto;
         margin: 20px auto;
     } 
 }
@@ -19,10 +20,12 @@ header {
 #icone_marker_map{
     display: flex;
     width: 40px;
-    margin-right: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.recherche__text{
+    font-size: 20px;
 }
 .recherche{
     background-color: #eaeaea;
@@ -30,7 +33,7 @@ header {
     &__explore{
         display: flex;
         flex-direction: column;    
-        width: auto;
+        width: 100%;
         background:  $colour-ground;
     }
     &__btn{
@@ -50,17 +53,17 @@ header {
     height: auto;
     margin-bottom: 30px;
     &--titre{
-        margin-left: 20px;
+        margin-left: 30px;
+        font-size: 32px
     }
     &--resto{
         @include btnFiltre;
         background-color: $colour-ground;
-        height: 30px;
-        border-radius: 30px;
+        height: 80px;
+        border-radius: 15px;
         display: flex;
-        align-items: center;
-        
-        width: 300px;
+        align-items: center;        
+        width: 400px;
         &__blocNum{
             background-color: $colour-primary;
             height: 25px;
@@ -77,13 +80,28 @@ header {
            
         }
         &__text{
-            margin: 0 auto;
+            font-size: 18px;
+            margin-left: 30px;
         }
     }
    
 }
 .filtre-icon{
     color: black;
+    text-align: center;
+    &__1{
+        font-size: 20px;
+        width: 10px;
+    }
+    &__2{
+        font-size: 20px;
+        width: 10px;
+    }
+    &__3{
+        font-size: 20px;
+        width: 10px;
+    }
+    
 }
 .backround3{
     background-color: $colour-secondary;  
@@ -101,7 +119,7 @@ header {
 } 
 @media (max-width:470px){
     .filtre--resto{
-        width: 250px;
+        width: 300px;
     }
     .filtre--resto__num{
        left: 10px;

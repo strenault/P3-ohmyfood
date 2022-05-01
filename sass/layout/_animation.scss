@@ -15,7 +15,13 @@
     
 }
 /*--animation--animation--fonctionnement--fonctionnement--*/
-.filtre--resto:hover .filtre-icon{
+.filtre--resto:hover .filtre-icon__1{
+	color: $colour-primary;
+}
+.filtre--resto:hover .filtre-icon__2{
+	color: $colour-primary;
+}
+.filtre--resto:hover .filtre-icon__3{
 	color: $colour-primary;
 }
 /*--animation--menu--animation--menu--animation--menu--*/

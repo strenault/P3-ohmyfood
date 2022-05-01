@@ -1,6 +1,9 @@
 /*--restaurant--restaurant--restaurant--restaurant*/
 .restaurant-titre{
-    margin-left: 20px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    font-size: 32px;
 }
 .box-restaurant{
     margin: 0 auto;
@@ -36,7 +39,7 @@
     flex-direction: column;
     margin: auto;
     width: 400px;
-    height: 400px;
+    height: 350px;
     position: relative;
     &__description{
         display: flex;
@@ -46,7 +49,11 @@
         margin-right: 15px;
         @include cubeLegend;
         &--font{
-            margin-top: -10px;
+            font-size: 22px;
+            margin-top: -20px;
+        }
+        &--header{
+            font-size: 24px;
         }
     }
 }
@@ -66,7 +73,6 @@
         justify-content: left;
         position: relative;
         transition: 5s;    
-        
         &:hover{            
                 opacity: 1;
                 transition: 2s;
@@ -260,7 +266,6 @@
     font-size: 15px;
 }
 /*--media--media--media--breakpoint--breakpoint--*/
-
 @media (max-width:1300px){
     .menu-info{
         width: 500px;
