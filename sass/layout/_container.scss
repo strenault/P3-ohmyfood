@@ -63,8 +63,10 @@
     &--icone{  
         display: inline-block;    
         align-items: center;
-        justify-content: left;
-        position: absolute;
+        justify-content: right;
+        margin-right: 30px;
+        position: relative;
+        top: 10px;
     }
     &--effet{
         opacity: 0;
@@ -72,6 +74,7 @@
         align-items: center;
         justify-content: left;
         position: relative;
+        top: -22px;
         transition: 5s;    
         &:hover{            
                 opacity: 1;
@@ -101,13 +104,13 @@
 .imgRestaurant12{
     background-image: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     @include imgtaille;
-    height: 650px;
+    height: 500px;
     margin-bottom: -50px;    
 }
 .imgRestaurant22{
     background-image: url("../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
     @include imgtaille;
-    height: 650px;
+    height: 450px;  
     margin-bottom: -50px;
 }
 .imgRestaurant32{
@@ -129,20 +132,21 @@
     justify-content: space-between;
     background-color: $colour-ground;
     border-radius: 50px 50px 0 0;
-    width: auto;    
+    width: 100%;    
 }
 
 .menu{
-    width: 650px;
+    width: 100%;
     margin: 0 auto;
     justify-content: space-between;
     display: flex;
     background-color: $colour-ground;
     border-radius: 30px 30px 0 0;
     &--titre{
-        font-family: shrikhrand;
-        font-size: 35px;
+        font-family: 'Shrikhand';
+        font-size: 36px;
         font-weight: 900;
+        margin-left: 20px;
     }
     &--logo{
         display: flex;
@@ -166,6 +170,7 @@
 .menu-coeur{
     display: flex;
     align-items: center;
+    margin-left: 40px;
 }    
 .menus{
     display: flex;
@@ -190,14 +195,14 @@
     display: flex;
     position: relative;
     margin-left: 10px;
-    font-size: 20px;
-    height: 30px;
+    font-size: 26px;
+    height: 60px;
     &::after{
         content: "";
         position: absolute;
-        width: 50px;
+        width: 65px;
         height: 3px;
-        bottom: 0px;
+        bottom: 20px;
         border-bottom: 3px solid $colour-tertiaire;
     }
 }
@@ -209,7 +214,7 @@
     text-overflow: ellipsis;
     align-items: center;
     padding-left: 10px;    
-    width: 650px;    
+    width: 100%;    
     @include boiteMenu;
     
 }
@@ -239,19 +244,18 @@
     text-overflow: ellipsis;
     overflow: hidden;
     &--cout{
-        justify-content: flex-end;
-        height: 70px;
+        font-size: 20px;
+        height: 85px;
         width: 70px;
         border-radius: 0 15px 15px 0;
         display: flex;
-        justify-content: center;
-        align-items: center;       
+        justify-content: center;      
     }
     &--button{ 
         position: relative;
         justify-content: flex-end;        
         border-radius: 0 15px 15px 0;
-        height: 70px;
+        height: 85px;
         width: 0px;
         background: $colour-tertiaire;
     }
@@ -262,24 +266,18 @@
     color: #fff;
     text-align: center;
     margin: 0 auto;
-    margin-top: 7px;
-    font-size: 15px;
+    position: absolute;
+    top: 40px;
+    right: 25px;
 }
 /*--media--media--media--breakpoint--breakpoint--*/
 @media (max-width:1300px){
     .menu-info{
         width: 500px;
     }
-    .menu{
-        width: 500px;
-    }
-    
 }
 @media (max-width:1125px){
     .menu-info{
-        width: 400px;
-    }
-    .menu{
         width: 400px;
     }
     .menus{
@@ -292,26 +290,6 @@
 }
 
 @media (max-width: 900px){
-    .menu--titre{
-        font-size: 22px;
-    }
-    .repas-titre{
-        font-size: 16px;
-        &::after{
-            width: 40px;
-        }
-    }
-    .menu-info{
-        height: 50px;
-    }
-    .menu-box--cout{
-        height: 50px;
-        width: 40px;
-    }
-    .menu-box--button{
-        height: 50px;
-        
-    }
     .check{
         margin-top: 6px;
         font-size: 10px;
@@ -324,9 +302,6 @@
    .menu-coeur{
        margin-right: 0px;
    }
-   .menu--titre{
-       margin-left: 0px;
-   }
 }
 @media (max-width: 600px){
     .imgRestaurant12,
@@ -338,16 +313,6 @@
 }
 @media (max-width: 500px){
     .menu-info{
-        width: 350px;
-    }
-    .menu{
-        width: 350px;
-    }
-    .repas-titre{
-        font-size: 14px;
-        &::after{
-            top: 20px;
-        }
     }
 }
 
@@ -372,9 +337,6 @@
         flex-wrap: nowrap;
 
     }
-    .menu--titre{
-        font-size: 18px;
-    }
     h3{
         font-size: 12px;
     }
@@ -384,19 +346,7 @@
     .cout-button p{
         font-size: 12px;
     }
-    .repas-titre{
-        font-size: 12px;
-        margin-bottom: 0px;
-        &::after{
-            width: 25px;
-            top: 20px;
-        }
-    }
     .menu-info{
-        width: 340px;
-    }
-    .menu{
-        width: 340px;
     }
     .menu-button--btn{
         font-size: 14px;
@@ -410,32 +360,13 @@
 }
 @media (max-width: 408px){    
     .menu-info{
-        width: 280px;
-    }
-    .menu{
-        width: 280px;
     }
     .footer-width{
         width: 280px;
     }
 }
 @media (max-width: 345px){
-    .menu--titre{
-        font-size: 14px;
-    }
-    .repas-titre{
-        font-size: 10px;
-        &::after{
-            width: 25px;
-            top: 15px;
-        }
-    }
-    
     .menu-info{
-        width: 230px;
-    }
-    .menu{
-        width: 230px
     }
     .check{
         margin-top: 5px;
@@ -449,11 +380,6 @@
     }
 }
 @media (max-width: 300px){
-   
     .menu-info{
-        width: 200px;
     }
-    .menu{
-        width: 200px
-    }    
 }

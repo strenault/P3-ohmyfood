@@ -2,7 +2,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
-    width: auto;
+    width: 100%;
     height: 220px;
     border-radius: 15px 15px 0 0;
 }
@@ -13,7 +13,7 @@
 }
 @mixin boiteMenu{
     font-size: 12px;
-    height: 70px;
+    height: 85px;
     border-radius: 15px;
     box-shadow: 2px 2px 2px 2px gray;
 }
