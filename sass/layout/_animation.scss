@@ -63,7 +63,6 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	margin: 20px 0 0 10px;
 }
 
 .cout {
@@ -84,11 +83,4 @@
 .menu-info:hover .menu-box--button > .check {
 	transform: rotate(0deg);
 }
-
-/*--media--media--media--breakpoints--breakpoints--*/
-@media (max-width: 650px){
-	.menu-info:hover .menu-box--button {
-	
-	}
   
-}

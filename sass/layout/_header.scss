@@ -1,40 +1,41 @@
-header {
-    margin: 0 auto;
+.logo {
     background: white;
     display: flex;
-    flex-direction: column;
-    width: 100%; 
-    .logo{
-        font-family: 'Shrikhland', sans-serif;
-        height: 20px;
-        font-size: 20px;
-        margin: 20px auto;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    &__entreprise{
+        text-align: center;
+        height: 36px;
+    }
+    &__retour{
+        display: flex;
+        position: absolute;
+        text-align: center;
+        left: 40px;
+        top: 24px;
+        font-size: 12px;
     } 
+}
+.logo__acceuil{
+   text-align: center;
+   margin: 20px 0px;
+   &__images{
+    font-size: 30px;
+   }
 }
 .logo__menu{
     align-items: center;
     justify-content: center;
     height: 40px;
 }
-.retour{
-    position: absolute;
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    left: 30px;
-    top: 30px;
-    font-weight: bold;
-}
-
-#icone_marker_map{
-    display: flex;
-    width: 40px;
-    display: flex;
-    align-items: center;
+.icon-recherche{
+    font-size: 20px;
+    margin-right: 20px;
     justify-content: center;
 }
 .recherche__text{
-    font-size: 20px;
+    font-size: 22px;
 }
 .recherche{
     background-color: #eaeaea;
@@ -61,22 +62,23 @@ header {
     display: flex;
     height: auto;
     margin-bottom: 30px;
+    flex-wrap: wrap;
     &--titre{
         margin-left: 30px;
-        font-size: 32px
+        font-size: 30px
     }
     &--resto{
         @include btnFiltre;
         background-color: $colour-ground;
         height: 80px;
-        border-radius: 15px;
+        border-radius: 25px;
         display: flex;
         align-items: center;        
         width: 400px;
         &__blocNum{
             background-color: $colour-primary;
-            height: 25px;
-            width: 25px;
+            height: 30px;
+            width: 30px;
             border-radius: 25PX;     
             position: relative;
             left: -20px;
@@ -84,13 +86,14 @@ header {
         &__num{
             
             position: absolute;
-            left: 9px;
-            top: -10px;
+            left: 11px;
+            top: -8px;
            
         }
         &__text{
-            font-size: 18px;
-            margin-left: 30px;
+            font-size: 22px;
+            margin-left: 40px;
+            font-weight: bold;
         }
     }
    
@@ -99,16 +102,20 @@ header {
     color: black;
     text-align: center;
     &__1{
-        font-size: 20px;
-        width: 10px;
+        font-size: 24px;
+        width: 20px;
+        margin-right: -10px;
+        margin-left: 10px;
     }
     &__2{
-        font-size: 20px;
-        width: 10px;
+        font-size: 24px;
+        width: 20px;
+        margin-left: 10px;
     }
     &__3{
-        font-size: 20px;
-        width: 10px;
+        font-size: 24px;
+        width: 20px;
+        margin-left: 10px;
     }
     
 }
@@ -121,22 +128,95 @@ header {
         flex-direction: column;
     }
 }
-@media (max-width:680px){
-    header .logo{
-        height: 40px;
-    }
-} 
-@media (max-width:470px){
+
+@media (max-width:490px){
     .filtre--resto{
-        width: 300px;
-    }
-    .filtre--resto__num{
-       left: 10px;
-       top: -6px;
+        width: 350px;
     }
 }
-@media (max-width:340px){
-    .filtre--resto{
-        width: 180px;
-    }   
+@media (max-width:411px){
+    .logo__acceuil{
+        margin: 10px 0px;
+        &__images{
+         font-size: 20px;
+        }
+     }
+.filtre{
+        margin-bottom: 40px;
+        &--titre{
+            margin-left: 15px;
+            font-size: 28px
+        }
+    }
+    .filtre-icon{
+        &__1{
+            font-size: 18px;
+            width: 20px;
+            margin-right: -9px;
+            margin-left: 10px;
+        }
+        &__2{
+            font-size: 18px;
+            width: 10px;
+            margin-left: 10px;
+        }
+        &__3{
+            font-size: 18px;
+            width: 10px;
+            margin-left: 10px;
+        }
+        
+    }
+}
+@media (max-width: 390px){
+    .logo__acceuil{
+        margin: 10px 0px;
+        &__images{
+         font-size: 18px;
+        }
+     }
+.filtre{
+        margin-bottom: 40px;
+        &--titre{
+            margin-top: 40px;
+            margin-left: 15px;
+            font-size: 22px
+        }
+        &--resto{        
+            width: 280px;
+            &__blocNum{
+                height: 25px;
+                width: 25px;     
+                left: -15px;
+            }
+            &__num{  
+                left: 9px;
+                top: -10px;
+               
+            }
+            &__text{
+                font-size: 16px;
+                margin-left: 20px;
+            }
+        } 
+    }
+    .filtre-icon{
+        &__1{
+            font-size: 18px;
+            width: 20px;
+            margin-right: -9px;
+            margin-left: 10px;
+        }
+        &__2{
+            font-size: 18px;
+            width: 10px;
+            margin-left: 10px;
+        }
+        &__3{
+            font-size: 18px;
+            width: 10px;
+            margin-left: 10px;
+        }
+        
+    }
 }

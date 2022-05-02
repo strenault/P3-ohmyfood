@@ -4,16 +4,16 @@ footer{
     background-color: black;
 }
 .footer-width{
-    width: 650px;
-    margin: 0 auto;
+    margin-left: 20px ;
 }
 .logo-smool{
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 42px;
+    margin-bottom: 20px;
     filter: invert(100%);
 }
 footer img{
-    height: 20px;    
+    height: 21px;    
 }
 .footer__cub{
     display: flex;
@@ -25,66 +25,24 @@ footer a{
     align-items: center;
     color: white;
 }
+footer p{
+    font-size: 21px;
+}
 .footer-box{
-    display: flex;
-    font-weight: bold;
+    margin-top: -18px;
+    margin-bottom: -18px;
+    font-size: 16px;
+    &__contact{
+        margin-top: -18px;
+        margin-bottom: 20px;
+    }
 }
 .footer-logo{
     width: 30px;   
 }
 /*--media--media--media--breakpoints--breakpoints--breakpoints--*/
-@media (max-width: 1300px){    
-    .footer-width{
-        width: 500px;
-    }
-}
-@media (max-width: 1125px){    
-    .footer-width{
-        width: 400px;
-    }
-}
-@media (max-width: 500px){    
-    .footer-width{
-        width: 350px;
-    }
-}
-@media (max-width: 450px){    
-    .footer-width{
-        width: 340px;
-    }
-}
-@media (max-width: 408px){    
-    .footer-width{
-        width: 280px;
-    }
-}
-@media (max-width: 360px){    
-    .footer-width{
-    margin: 0 0;
-    }
-}
-@media (max-width: 350px){
-    .logo-smool{
-        margin-left: 20px;
-    }
-    .footer__cub{
-        margin-left: 20px;
-    }    
-}
-@media (max-width: 345px){
-    .footer-width{
-        width: 230px;
-    }
-}
 @media (max-width: 300px){
-    .footer-width{
-        width: 200px;
-        font-size: 12px;
+    footer p{
+        font-size: 18px;
     }
-    .logo-smool{
-        margin-left: 10px;
-    }
-    .footer__cub{
-        margin-left: 10px;
-    }    
 }
