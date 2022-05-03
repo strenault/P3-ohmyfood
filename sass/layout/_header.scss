@@ -18,11 +18,14 @@
     } 
 }
 .logo__acceuil{
-   text-align: center;
-   margin: 20px 0px;
-   &__images{
-    font-size: 30px;
-   }
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    height: 30px;
+    &__images{
+    
+       height: 20px;
+    }
 }
 .logo__menu{
     align-items: center;
