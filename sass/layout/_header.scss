@@ -138,17 +138,25 @@
     }
 }
 @media (max-width:411px){
-    .logo__acceuil{
-        margin: 10px 0px;
+.logo__acceuil{
+    margin: 10px 0px;
         &__images{
-         font-size: 20px;
+        font-size: 20px;
         }
-     }
+}
+.recherche__text{
+    font-size: 18px;
+}
+.icon-recherche{
+    font-size: 18px;
+    margin-right: 10px;
+}
 .filtre{
         margin-bottom: 40px;
         &--titre{
+            margin-top: 40px;
             margin-left: 15px;
-            font-size: 28px
+            font-size: 27px
         }
     }
     .filtre-icon{

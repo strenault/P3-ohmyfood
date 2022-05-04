@@ -155,7 +155,7 @@
 .menu{
     width: 100%;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
     background-color: $colour-ground;
     border-radius: 30px 30px 0 0;
@@ -163,7 +163,6 @@
         font-family: 'Shrikhand';
         font-size: 35px;
         font-weight: 900;
-        margin-left: 20px;
     }
     &--logo{
         display: flex;
@@ -318,6 +317,22 @@
     .menu-info{
         width: 430px;
     }
+    .imgRestaurant12{
+        height: 350px;
+        margin-bottom: -30px;
+    }
+    .imgRestaurant22{
+        height: 350px;
+        margin-bottom: -30px;
+    }
+    .imgRestaurant32{
+        height: 350px;
+        margin-bottom: -30px;
+    }
+    .imgRestaurant42{
+        height: 350px;
+        margin-bottom: -30px;
+    }
 }
 @media (max-width: 474px){
     .menu-info{
@@ -394,6 +409,17 @@
         }
     }
 }
+@media (max-width: 380px){
+    .menu--titre{
+        font-size: 25px;
+    }
+    .coeur--icone{
+        top: 15px;
+    }
+    .coeur--effet{
+        top: -17px;
+    }
+}
 @media (max-width: 372px){ 
     .restaurant-titre{
         margin-top: 40px;
@@ -421,16 +447,26 @@
     .imgRestaurant4{
         height: 180px;
     }
+    .menu--titre{
+        font-size: 25px;
+    }
+    .coeur--icone{
+        top: 10px;
+    }
+    .coeur--effet{
+        top: -10px;
+    }
  }
 @media (max-width: 370px){    
    .menu--titre{
-       font-size: 30px;
+       font-size: 24px;
    }
 }
 @media (max-width: 350px){    
     .menu-info{
         width: 280px
     }
+   
 }
 @media (max-width: 345px){
     .logo__entreprise{
