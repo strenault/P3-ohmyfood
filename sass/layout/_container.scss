@@ -316,6 +316,7 @@
 @media (max-width: 500px){
     .menu-info{
         width: 430px;
+        height: 80px;
     }
     .imgRestaurant12{
         height: 350px;
@@ -409,15 +410,35 @@
         }
     }
 }
-@media (max-width: 380px){
+@media (max-width: 400px){
     .menu--titre{
-        font-size: 25px;
+        font-size: 27px;
+    }
+    .repas-titre{
+        font-size: 20px;
+        height: 52px;
+        margin-bottom: -22px;
+        &::after{
+            width: 42px;
+        }
+    }
+    .title-sup{
+        font-size: 22px;
+    }
+    .title-header{
+        font-size: 22px;
     }
     .coeur--icone{
-        top: 15px;
+        top: 25px;
+        &.fa-2x{
+            font-size: 25px;
+        }
     }
     .coeur--effet{
-        top: -17px;
+        top: -1px;
+        &.fa-2x{
+            font-size: 25px;
+        }
     }
 }
 @media (max-width: 372px){ 
@@ -450,11 +471,8 @@
     .menu--titre{
         font-size: 25px;
     }
-    .coeur--icone{
-        top: 10px;
-    }
     .coeur--effet{
-        top: -10px;
+        top: -1px;
     }
  }
 @media (max-width: 370px){    
@@ -493,13 +511,6 @@
     }
     .coeur--effet{
         top: -16px;
-    }
-    .repas-titre{
-        font-size: 20px;
-        height: 50px;
-        &::after{
-            width: 40px;
-        }
     }
     .title-sup{
         font-size: 18px;
