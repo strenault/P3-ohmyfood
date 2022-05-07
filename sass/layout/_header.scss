@@ -1,10 +1,12 @@
 .logo {
+    font-family: "shrikhand";
     background: white;
     display: flex;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
     &__entreprise{
+        font-family: "shrikhand";
         text-align: center;
         height: 36px;
     }
@@ -19,9 +21,10 @@
 }
 .logo__acceuil{
     display: flex;
+    font-family: "shrikhand";
     justify-content: center;
     margin: 20px 0px;
-    height: 30px;
+    height: 40px;
     &__images{
     
        height: 20px;
@@ -181,6 +184,7 @@
 }
 @media (max-width: 390px){
     .logo__acceuil{
+        height: 35px;
         margin: 10px 0px;
         &__images{
          font-size: 18px;
