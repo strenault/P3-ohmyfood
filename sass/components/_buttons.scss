@@ -10,7 +10,7 @@
     margin-bottom: 70px; 
     margin-top: 20px;
 }
-.menu-button--btn{
+.menu-button__btn{
     @include btn;
     display: flex; 
     align-items: center;
@@ -22,7 +22,7 @@
     width: 220px;
     margin-top: 40px;
 }
-.menu-box--button {
+.menu-box__button {
 	overflow: hidden;
 	text-align: center;
 	background: $colour-tertiaire;

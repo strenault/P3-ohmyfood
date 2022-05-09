@@ -1,5 +1,5 @@
 /*--animation--coeur--animation--coeur--*/
-@keyframes coeur-effect {
+@keyframes coeur__effect {
     0%{  
         opacity: 0;
     }
@@ -15,13 +15,13 @@
     
 }
 /*--animation--animation--fonctionnement--fonctionnement--*/
-.filtre--resto:hover .filtre-icon__1{
+.filtre__resto:hover .filtre-icon__1{
 	color: $colour-primary;
 }
-.filtre--resto:hover .filtre-icon__2{
+.filtre__resto:hover .filtre-icon__2{
 	color: $colour-primary;
 }
-.filtre--resto:hover .filtre-icon__3{
+.filtre__resto:hover .filtre-icon__3{
 	color: $colour-primary;
 }
 /*--animation--menu--animation--menu--animation--menu--*/
@@ -77,10 +77,10 @@
 	transform: rotate(360deg);
 	transition: transform 1s;
 }
-.menu-info:hover .menu-box--button {
+.menu-info:hover .menu-box__button {
 	width: 70px;
 }
-.menu-info:hover .menu-box--button > .check {
+.menu-info:hover .menu-box__button > .check {
 	transform: rotate(0deg);
 }
   
