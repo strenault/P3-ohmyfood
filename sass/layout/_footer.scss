@@ -15,10 +15,19 @@ footer{
 footer img{
     height: 21px;    
 }
-.footer__cub{
+.footer-cub{
     display: flex;
     flex-direction: column;
     margin-left: 10px;
+    &__box{
+        margin-top: -18px;
+        margin-bottom: -18px;
+        font-size: 16px;
+        &--contact{
+            margin-top: -18px;
+            margin-bottom: 20px;
+        }
+    }
 }
 footer a{
     display: flex;
@@ -28,32 +37,20 @@ footer a{
 footer p{
     font-size: 21px;
 }
-.footer-box{
-    margin-top: -18px;
-    margin-bottom: -18px;
-    font-size: 16px;
-    &__contact{
-        margin-top: -18px;
-        margin-bottom: 20px;
-    }
-}
 .footer-logo{
     width: 30px;   
 }
 /*--media--media--media--breakpoints--breakpoints--breakpoints--*/
 @media (max-width: 411px){
-    footer img{
-        height: 18px;
-    }
     .footer-width{
         margin-left: 14px;
     }
     footer p{
         font-size: 20px;
     }
-    .footer-box{
+    .footer-cub__box{
         margin-bottom: -9px;
-        &__contact{
+        &--contact{
             margin-top: -9px;
             margin-bottom: 30px;
         }
