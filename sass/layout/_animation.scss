@@ -63,15 +63,30 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+	cursor: pointer;
 }
-
 .cout {
 	padding: 38px 20px 15px 15px;
 	font-size: 20px;
 	font-weight: bold;
 }
-.menu-info {
-	cursor: pointer;
+.coeur{
+  	&__effet1{ 
+		transition: 5s; 
+        &:hover{            
+                opacity: 1;
+                transition: 2s;
+                content: "";        
+        }
+    }
+	&__effet{ 
+		transition: 5s; 
+        &:hover{            
+                opacity: 1;
+                transition: 2s;
+                content: "";        
+        }
+    }
 }
 .check {
 	transform: rotate(360deg);

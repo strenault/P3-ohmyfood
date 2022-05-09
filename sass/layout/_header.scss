@@ -154,32 +154,32 @@
     margin-right: 10px;
 }
 .filtre{
-        margin-bottom: 40px;
-        &__titre{
-            margin-top: 40px;
-            margin-left: 15px;
-            font-size: 27px
-        }
+    margin-bottom: 40px;
+    &__titre{
+        margin-top: 40px;
+        margin-left: 15px;
+        font-size: 20px
     }
-    .filtre-icon{
-        &__1{
-            font-size: 18px;
-            width: 20px;
-            margin-right: -9px;
-            margin-left: 10px;
-        }
-        &__2{
-            font-size: 18px;
-            width: 10px;
-            margin-left: 10px;
-        }
-        &__3{
-            font-size: 18px;
-            width: 10px;
-            margin-left: 10px;
-        }
+}
+.filtre-icon{
+    &__1{
+        font-size: 18px;
+         width: 20px;
+         margin-right: -9px;
+        margin-left: 10px;
+    }
+    &__2{
+        font-size: 18px;
+         width: 10px;
+         margin-left: 10px;
+    }
+    &__3{
+        font-size: 18px;
+        width: 10px;
+        margin-left: 10px;
+    }
         
-    }
+}
 }
 @media (max-width: 390px){
     .logo__acceuil{
@@ -189,7 +189,7 @@
          font-size: 18px;
         }
      }
-.filtre{
+    .filtre{
         margin-bottom: 40px;
         &__titre{
             margin-top: 40px;

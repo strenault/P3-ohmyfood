@@ -69,14 +69,7 @@
         opacity: 0;
         color: mix($colour-secondary, $colour-primary);
         position: relative;
-        top: -17px;
-        transition: 5s;    
-        &:hover{            
-                opacity: 1;
-                transition: 2s;
-                content: "";      
-           
-        }
+        top: -17px;  
     }
     &__icone{  
         display: inline-block;    
@@ -89,14 +82,7 @@
         align-items: center;
         justify-content: left;
         position: relative;
-        top: 3px;
-        transition: 5s;    
-        &:hover{            
-                opacity: 1;
-                transition: 2s;
-                content: "";      
-           
-        }
+        top: 3px;   
     }
 }
 .marge-delice{
