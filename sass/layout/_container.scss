@@ -62,28 +62,27 @@
 .coeur{
     display: inline-block;
     &__icone1{ 
-        text-align: center;    
+        align-items: center; 
         position: relative;
-        top: 15px;
     }
     &__effet1{
         opacity: 0;
         color: mix($colour-secondary, $colour-primary);
-        position: relative;
-        top: -17px;  
+        position: absolute;
+        bottom: 31px;
+        
     }
     &__icone{  
-        display: inline-block;    
+        align-items: center;  
         position: relative;
-        top: 35px;
+        top: 32px;
     }
     &__effet{
         opacity: 0;
         color: mix($colour-secondary, $colour-primary);
+        position: absolute;
         align-items: center;
-        justify-content: left;
-        position: relative;
-        top: 3px;   
+          
     }
 }
 .marge-delice{
@@ -348,7 +347,11 @@
             }
         }
     }
-   
+    .coeur{
+        &__icone1{        
+            bottom: 7px;
+        }
+    }
     .cart-badge {
         padding: 3px;
     }
@@ -364,11 +367,6 @@
         flex-wrap: nowrap;
     }
 
-}
-@media (max-width: 464px){
-    .menu-info{
-        width: 350px;
-    }
 }
 @media (max-width: 464px){
     .menu-info{
@@ -396,6 +394,11 @@
             }
         }
     }
+    .coeur{
+        &__effet1{        
+            bottom: 30px;
+        }
+    }
 }
 @media (max-width: 400px){
     .menu__titre{
@@ -416,15 +419,19 @@
         font-size: 22px;
     }
     .coeur__icone{
-        top: 25px;
+        top: 26px;
         &.fa-2x{
             font-size: 25px;
         }
     }
     .coeur__effet{
-        top: -1px;
         &.fa-2x{
             font-size: 25px;
+        }    
+    }
+    .coeur{
+        &__effet1{        
+            bottom: 31px;
         }
     }
 }
@@ -448,6 +455,11 @@
                 font-size: 20px;
             }
         }
+        .coeur{
+            &__effet1{        
+                bottom: 26px;
+            }
+        }
     }
     .imgRestaurant1,
     .imgRestaurant2,
@@ -458,10 +470,8 @@
     .menu__titre{
         font-size: 25px;
     }
-    .coeur__effet{
-        top: -1px;
-    }
- }
+}
+
 @media (max-width: 370px){    
    .menu__titre{
        font-size: 24px;
@@ -491,13 +501,11 @@
         height: 25px;
     }
     .menu__titre{
+        margin-top: 25px;
         font-size: 20px;
     }
     .coeur__icone{
-        top: 15px;
-    }
-    .coeur__effet{
-        top: -11px;
+        top: 26px;
     }
     .title-sup{
         font-size: 18px;
